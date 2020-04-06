@@ -66,6 +66,9 @@ public:
     bool GetCopyOnSelect() const noexcept;
     void SetCopyOnSelect(const bool copyOnSelect) noexcept;
 
+    bool GetCopyFormatting() const noexcept;
+    void SetCopyFormatting(const bool copyFormatting) noexcept;
+
     std::optional<int32_t> GetInitialX() const noexcept;
 
     std::optional<int32_t> GetInitialY() const noexcept;
@@ -112,6 +115,7 @@ private:
     bool _showTabsInTitlebar;
     std::wstring _wordDelimiters;
     bool _copyOnSelect;
+    bool _copyFormatting;
     winrt::Windows::UI::Xaml::ElementTheme _requestedTheme;
     winrt::Microsoft::UI::Xaml::Controls::TabViewWidthMode _tabWidthMode;
 
